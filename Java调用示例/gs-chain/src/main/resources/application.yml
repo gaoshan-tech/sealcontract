@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+#issuer info
+issuer:
+  context: https://www.w3.org/2018/credentials/v1
+  issuers-info: https://www.w3.org/2018/credentials/
+  sign-type: EcdsaSecp256k1Signature2019
+  verification-method: https://www.w3.org/2018/credentials/
+  did: did:gid:86f3c54028d6183add4aff1f601e5c229e58d298
+  private-key: "0x4e88da1fe676a30bce1d6c0a7c26d79e5426f26e16f8626210f2e9da228bf60d"
+
+#chain info
+chain:
+  gas-limit: 4000000
+  gas-price: 1000000000
+  node-rpc: http://web3.consortium.moacchain.net/
+  identity-contract: "0x5df04283344ee34b5825bab69f5bff1de55c3f02"
+  seals-router-contract: "0x7215ad9656795660796a910fd7992ef90ca07f3e"
+  contracts-contract: "0xa05f40fe33ce4a60a8beff03fddc1a26c3ee6d58"
+
