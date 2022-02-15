@@ -2,6 +2,7 @@ pragma solidity ^0.6.0;
 
 
 import "./Proxy.sol";
+import "./Address.sol";
 
 contract UpgradeabilityProxy is Proxy {
     constructor(address _logic, bytes memory _data) public payable {

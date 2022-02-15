@@ -4,12 +4,10 @@ import "./Ownable.sol";
 import "./ECRecover.sol";
 import "./ISealsRouter.sol";
 import "./ISeals.sol";
-import "./SafeMath.sol";
 
 pragma solidity ^0.6.0;
 
 contract Contracts is Ownable {
-    using SafeMath for uint256;
     address sealsRouterAddr;
     // Seals public seals; //签章合约
     struct Signature {
